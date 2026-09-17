@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第三期利润表（8月1日-8月31日）</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f2f4f7;font-family:'Microsoft YaHei','PingFang SC',sans-serif;color:#1f2329;padding:24px 16px}
+.wrap{max-width:1080px;margin:0 auto}
+.topbar{margin-bottom:20px}
+.back-link{display:inline-block;color:#1664ff;text-decoration:none;font-size:14px;margin-bottom:12px}
+.back-link:hover{text-decoration:underline}
+h1{font-size:22px;font-weight:700;text-align:center;color:#1f2329;margin-bottom:4px}
+.subtitle{text-align:center;font-size:13px;color:#8a919f;margin-bottom:20px}
+/* 核心指标卡片 */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px}
+.card{background:#fff;border-radius:8px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.card .label{font-size:13px;color:#8a919f;margin-bottom:8px}
+.card .value{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums}
+.card .value.green{color:#00b578}
+.card .value.red{color:#f53f3f}
+.card .value.blue{color:#1664ff}
+/* 卡片区块 */
+.section{background:#fff;border-radius:8px;padding:20px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.section h2{font-size:16px;font-weight:700;color:#1f2329;margin-bottom:14px;padding-left:10px;border-left:3px solid #1664ff}
+table{width:100%;border-collapse:collapse}
+th{background:#f7f8fa;color:#4e5969;font-weight:600;font-size:13px;padding:10px 12px;border:1px solid #e5e6eb;text-align:center}
+td{padding:9px 12px;font-size:13px;border:1px solid #e5e6eb;color:#1f2329}
+tbody tr:nth-child(even){background:#fafbfc}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+td.right{text-align:right;font-variant-numeric:tabular-nums}
+td.left{text-align:left}
+td.center{text-align:center}
+.num.green{color:#00b578}
+.num.red{color:#f53f3f}
+.positive{color:#00b578;font-weight:600}
+.negative{color:#f53f3f;font-weight:600}
+.note{font-size:11px;color:#8a919f;margin-top:8px}
+/* 趋势表容器 */
+.table-scroll{overflow-x:auto}
+.trend-table{min-width:640px}
+/* 按钮与页脚 */
+.footer{text-align:center;margin-top:20px}
+.btn-export{display:inline-block;background:#1664ff;color:#fff;border:none;border-radius:6px;padding:10px 24px;font-size:14px;font-weight:600;cursor:pointer;margin-bottom:16px}
+.btn-export:hover{background:#0e4fd6}
+.footer .back-link{font-size:14px}
+@media(max-width:860px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){
+  .cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back-link" href="index.html">← 返回主平台</a>
+  </div>
+  <h1>第三期利润表</h1>
+  <div class="subtitle">统计周期：8月1日 - 8月31日</div>
+
+  <!-- 核心指标卡片 -->
+  <div class="cards">
+    <div class="card">
+      <div class="label">总计利润</div>
+      <div class="value green">$10,083.40</div>
+    </div>
+    <div class="card">
+      <div class="label">运营成本</div>
+      <div class="value red">$30,918.60</div>
+    </div>
+    <div class="card">
+      <div class="label">无效消耗</div>
+      <div class="value red">$3,015.70</div>
+    </div>
+    <div class="card">
+      <div class="label">累计转化</div>
+      <div class="value blue">1,066人</div>
+    </div>
+  </div>
+
+  <!-- 详细数据表 -->
+  <div class="section">
+    <h2>详细数据</h2>
+    <table>
+      <thead>
+        <tr><th style="text-align:left">指标</th><th>数值</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="left">统计周期</td><td class="center">8月1日-8月31日</td></tr>
+        <tr><td class="left">总计利润</td><td class="num green">$10,083.40</td></tr>
+        <tr><td class="left">运营成本</td><td class="num red">$30,918.60</td></tr>
+        <tr><td class="left">无效消耗</td><td class="num red">$3,015.70</td></tr>
+        <tr><td class="left">累计转化</td><td class="num">1,066人</td></tr>
+        <tr><td class="left">复购次数</td><td class="num">2,189次</td></tr>
+        <tr><td class="left">曝光累积</td><td class="num">8,190,927次</td></tr>
+        <tr><td class="left">点击</td><td class="num">6,092,123次</td></tr>
+        <tr><td class="left">点击率(CTR)</td><td class="num">74.4%</td></tr>
+        <tr><td class="left">复购率</td><td class="num">205.3%</td></tr>
+        <tr><td class="left">客单价</td><td class="num">$9.46</td></tr>
+      </tbody>
+    </table>
+    <div class="note">点击率 = 6,092,123 / 8,190,927 × 100 ≈ 74.4%；复购率 = 2,189 / 1,066 × 100 ≈ 205.3%；客单价 = ($10,083.40 + $3,015.70) / 1,066 ≈ $9.46（利润 + 无效消耗 / 转化人数）</div>
+  </div>
+
+  <!-- 利润构成分析 -->
+  <div class="section">
+    <h2>利润构成分析</h2>
+    <table>
+      <thead>
+        <tr><th style="text-align:left">项目</th><th>金额</th><th>占比</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="left">总计利润</td><td class="num green">$10,083.40</td><td class="num">24.6%</td></tr>
+        <tr><td class="left">运营成本</td><td class="num red">$30,918.60</td><td class="num">75.4%</td></tr>
+        <tr><td class="left">总收入</td><td class="num">$41,002.00</td><td class="num">100%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 无效消耗分析 -->
+  <div class="section">
+    <h2>无效消耗分析</h2>
+    <table>
+      <thead>
+        <tr><th style="text-align:left">项目</th><th>金额</th><th>占总消耗比</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="left">无效消耗</td><td class="num red">$3,015.70</td><td class="num">8.9%</td></tr>
+        <tr><td class="left">有效消耗</td><td class="num">$30,918.60</td><td class="num">91.1%</td></tr>
+        <tr><td class="left">总消耗</td><td class="num">$33,934.30</td><td class="num">100%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 流量漏斗 -->
+  <div class="section">
+    <h2>流量漏斗</h2>
+    <table>
+      <thead>
+        <tr><th style="text-align:left">漏斗阶段</th><th>数值</th><th>转化率</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="left">曝光</td><td class="num">8,190,927</td><td class="center">—</td></tr>
+        <tr><td class="left">点击</td><td class="num">6,092,123</td><td class="num">74.4%</td></tr>
+        <tr><td class="left">转化</td><td class="num">1,066</td><td class="num">0.017%</td></tr>
+        <tr><td class="left">复购</td><td class="num">2,189</td><td class="num">205.3%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 每日利润趋势 -->
+  <div class="section">
+    <h2>每日利润趋势（8月1日-8月31日）</h2>
+    <div class="table-scroll">
+      <table class="trend-table" id="trendTable">
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>曝光</th>
+            <th>点击</th>
+            <th>转化</th>
+            <th>复购</th>
+            <th>消耗</th>
+            <th>利润</th>
+          </tr>
+        </thead>
+        <tbody id="trendBody"></tbody>
+      </table>
+    </div>
+    <div class="note">每日数据含 ±10% 随机波动，31天合计精确等于总数（曝光 8,190,927 / 点击 6,092,123 / 转化 1,066 / 复购 2,189 / 运营成本 $30,918.60 / 利润 $10,083.40）。</div>
+  </div>
+
+  <div class="footer">
+    <button class="btn-export" onclick="exportCSV()">导出CSV</button>
+    <br>
+    <a class="back-link" href="index.html">← 返回主平台</a>
+  </div>
+</div>
+
+<script>
+// 每日趋势数据生成（±10%波动，合计精确等于总数）
+(function(){
+  var days = 31;
+  var totals = {
+    exposure: 8190927,
+    click: 6092123,
+    convert: 1066,
+    repurchase: 2189,
+    cost: 30918.60,
+    profit: 10083.40
+  };
+
+  // 生成随机权重（1 ± 0.1）
+  function genWeights(n){
+    var w = [];
+    var sum = 0;
+    for(var i=0;i<n;i++){
+      var v = 1 + (Math.random()*0.2 - 0.1); // 0.9 ~ 1.1
+      w.push(v);
+      sum += v;
+    }
+    return {w:w, sum:sum};
+  }
+
+  // 按权重分配整数，最后一行补齐差值
+  function distributeInt(total, weights){
+    var n = weights.length;
+    var raw = [];
+    var sum = 0;
+    for(var i=0;i<n;i++){
+      var v = Math.round(total * weights[i] / weights.sum);
+      raw.push(v);
+      sum += v;
+    }
+    var diff = total - sum;
+    // 将差值逐行分摊（每次±1）
+    var idx = 0;
+    while(diff !== 0){
+      var step = diff > 0 ? 1 : -1;
+      raw[idx % n] += step;
+      diff -= step;
+      idx++;
+    }
+    return raw;
+  }
+
+  // 按权重分配浮点数（保留2位），最后一行补齐差值
+  function distributeFloat(total, weights){
+    var n = weights.length;
+    var raw = [];
+    var sum = 0;
+    for(var i=0;i<n;i++){
+      var v = Math.round(total * weights[i] / weights.sum * 100) / 100;
+      raw.push(v);
+      sum += v;
+    }
+    // 修正浮点误差
+    var diff = Math.round((total - sum) * 100) / 100;
+    raw[n-1] = Math.round((raw[n-1] + diff) * 100) / 100;
+    return raw;
+  }
+
+  var w1 = genWeights(days);
+  var w2 = genWeights(days);
+  var w3 = genWeights(days);
+  var w4 = genWeights(days);
+  var w5 = genWeights(days);
+  var w6 = genWeights(days);
+
+  var exposure = distributeInt(totals.exposure, w1.w);
+  var click = distributeInt(totals.click, w2.w);
+  var convert = distributeInt(totals.convert, w3.w);
+  var repurchase = distributeInt(totals.repurchase, w4.w);
+  var cost = distributeFloat(totals.cost, w5.w);
+  var profit = distributeFloat(totals.profit, w6.w);
+
+  var tbody = document.getElementById('trendBody');
+  var html = '';
+  for(var d=0; d<days; d++){
+    var date = (8) + '/' + (d+1);
+    html += '<tr>';
+    html += '<td class="center">' + date + '</td>';
+    html += '<td class="num">' + exposure[d].toLocaleString() + '</td>';
+    html += '<td class="num">' + click[d].toLocaleString() + '</td>';
+    html += '<td class="num">' + convert[d].toLocaleString() + '</td>';
+    html += '<td class="num">' + repurchase[d].toLocaleString() + '</td>';
+    html += '<td class="num red">$' + cost[d].toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '</td>';
+    html += '<td class="num green">$' + profit[d].toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '</td>';
+    html += '</tr>';
+  }
+  tbody.innerHTML = html;
+})();
+
+// 导出CSV
+function exportCSV(){
+  var rows = [];
+  rows.push(['日期','曝光','点击','转化','复购','消耗','利润']);
+  var tbody = document.getElementById('trendBody');
+  var trs = tbody.getElementsByTagName('tr');
+  for(var i=0;i<trs.length;i++){
+    var tds = trs[i].getElementsByTagName('td');
+    var row = [];
+    for(var j=0;j<tds.length;j++){
+      row.push(tds[j].innerText.trim().replace(/,/g,'').replace('$',''));
+    }
+    rows.push(row);
+  }
+  var csv = '\uFEFF' + rows.map(function(r){ return r.join(','); }).join('\n');
+  var blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
+  var link = document.createElement('a');
+  var url = URL.createObjectURL(blob);
+  link.href = url;
+  link.download = 'profit-period3-daily.csv';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>
